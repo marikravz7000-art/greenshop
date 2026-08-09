@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenShop</title>
-    .
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../fonts/fonts.css">
+    <link rel="stylesheet" href="../fonts/fonts.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
@@ -54,50 +53,34 @@
         <img src="../images/Group 25.png" alt="flowers" />
       </div>
     </section>
-    <section class="shop-section clearfix">
+
+    <!-- Shop Section на Flexbox замість Float -->
+    <section class="shop-section">
       <aside class="sidebar">
         <div class="categories">
           <h3 class="sidebar-title">Categories</h3>
           <ul class="category-list">
-            <li class="active">
-              <a href="#">House Plants</a>
-            </li>
-            <li>
-              <a href="#">Potter Plants</a>
-            </li>
-            <li>
-              <a href="#">Seeds</a>
-            </li>
-            <li>
-              <a href="#">Small Plants</a>
-            </li>
-            <li>
-              <a href="#">Big Plants</a>
-            </li>
-            <li>
-              <a href="#">Succulents</a>
-            </li>
-            <li>
-              <a href="#">Terrariums</a>
-            </li>
-            <li>
-              <a href="#">Gardening</a>
-            </li>
-            <li>
-              <a href="#">Accessories</a>
-            </li>
+            <li class="active"><a href="#">House Plants</a></li>
+            <li><a href="#">Potter Plants</a></li>
+            <li><a href="#">Seeds</a></li>
+            <li><a href="#">Small Plants</a></li>
+            <li><a href="#">Big Plants</a></li>
+            <li><a href="#">Succulents</a></li>
+            <li><a href="#">Terrariums</a></li>
+            <li><a href="#">Gardening</a></li>
+            <li><a href="#">Accessories</a></li>
           </ul>
         </div>
 
         <div class="sale-banner">
           <h2>Super Sale</h2>
           <p>UP TO 75% OFF</p>
-          <img src="../images/ChatGPT Image Aug 5, 2026, 04_09_05 PM.png" alt="Super Sale Plant" />
+          <img src="../images/ChatGPT Image Aug 5.png" alt="Super Sale Plant" />
         </div>
       </aside>
 
       <div class="products-content">
-        <div class="shop-navbar clearfix">
+        <div class="shop-navbar">
           <ul class="filter-tabs">
             <li class="active"><a href="#">All Plants</a></li>
             <li><a href="#">New Arrivals</a></li>
@@ -114,7 +97,7 @@
           </div>
         </div>
 
-        <div class="products-grid clearfix">
+        <div class="products-grid">
           <div class="product-card">
             <div class="img-box">
               <img src="../images/image 1.png" alt="Barberton Daisy" />
@@ -188,15 +171,99 @@
           </div>
         </div>
 
-        <div class="pagination">
+       
+      </div>
+    </section>
+
+    
+    <section class="banner-section">
+      <div class="banner-card">
+        <div class="banner-img">
+          <img src="../images/image 14.png" alt="Summer Cactus and Succulents" />
+        </div>
+        <div class="banner-content">
+          <h3>SUMMER CACTUS<br />PLUS SUCCULENTS</h3>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+          <a href="#" class="banner-btn">Find More ></a>
+        </div>
+      </div>
+
+      <div class="banner-card">
+        <div class="banner-img">
+          <img src="../images/image 15.png" alt="Styling Trends and Much More" />
+        </div>
+        <div class="banner-content">
+          <h3>STYLING TRENDS<br />PLUS MUCH MORE</h3>
+          <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
+          <a href="#" class="banner-btn">Find More ></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog-section">
+      <div class="blog-header">
+        <h2>Our Blog Posts</h2>
+        <p>We are an online plant shop offering a wide range of cheap and trendy plants.</p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="../images/01.png" alt="Cactus and Succulent Care Tips" />
+          </div>
+          <div class="blog-content">
+            <span class="blog-meta">September 12 | Read in 6 minutes</span>
+            <h3 class="blog-title">Cactus and Succulent Care Tips</h3>
+            <p class="blog-description">Cacti are succulents are easy care plants for any home or patio.</p>
+            <a href="#" class="blog-link">Read More ></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="../images/02.png" alt="Top 10 Succulents for Your Home" />
+          </div>
+          <div class="blog-content">
+            <span class="blog-meta">September 13 | Read in 2 minutes</span>
+            <h3 class="blog-title">Top 10 Succulents for Your Home</h3>
+            <p class="blog-description">Best in hanging baskets. Prefers medium to high light.</p>
+            <a href="#" class="blog-link">Read More ></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="../images/03.png" alt="Cacti and Succulent Care Tips" />
+          </div>
+          <div class="blog-content">
+            <span class="blog-meta">September 15 | Read in 3 minutes</span>
+            <h3 class="blog-title">Cacti and Succulent Care Tips</h3>
+            <p class="blog-description">Cacti and succulents thrive in containers and because most are..</p>
+            <a href="#" class="blog-link">Read More ></a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img">
+            <img src="../images/04.png" alt="Best Houseplants Room By Room" />
+          </div>
+          <div class="blog-content">
+            <span class="blog-meta">September 15 | Read in 2 minutes</span>
+            <h3 class="blog-title">Best Houseplants Room By Room</h3>
+            <p class="blog-description">The benefits of houseplants are endless. In addition to..</p>
+            <a href="#" class="blog-link">Read More ></a>
+          </div>
+        </article>
+      </div> 
+      
+      <div class="pagination">
           <a href="#" class="page-link active">1</a>
           <a href="#" class="page-link">2</a>
           <a href="#" class="page-link">3</a>
           <a href="#" class="page-link">4</a>
-          <a href="#" class="page-link">&gt;</a>
+          <a href="#" class="page-link">></a>
         </div>
-      </div>
     </section>
   </body>
-  
 </html>
