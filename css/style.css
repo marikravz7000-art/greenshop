@@ -41,12 +41,12 @@ body {
   color: #46a358;
 }
 
-/* --------- ДВОРІВНЕВЕ ВИПАДАЮЧЕ МЕНЮ (Position) --------- */
+
 .has-dropdown {
-  position: relative; /* Точка відліку для 1-го рівня */
+  position: relative; 
 }
 
-/* Базові стилі та приховування випадаючих списків */
+
 .dropdown-level-1,
 .dropdown-level-2 {
   display: none;
@@ -67,7 +67,7 @@ body {
 }
 
 .dropdown-level-1 > li {
-  position: relative; /* Точка відліку для 2-го рівня */
+  position: relative; 
   width: 100%;
 }
 
@@ -82,18 +82,18 @@ body {
   width: 100%;
 }
 
-/* Показ 1-го рівня при hover на Plant Care */
+
 .has-dropdown:hover > .dropdown-level-1 {
   display: block;
 }
 
-/* Зелений фон для виділеного елемента (Priming) */
+
 .dropdown-level-1 li:hover > a {
   background-color: #187333;
   color: #ffffff;
 }
 
-/* 2-Й РІВЕНЬ: Випадає ВПРАВО */
+
 .dropdown-level-2 {
   top: 0;
   left: 100%;
@@ -111,7 +111,7 @@ body {
   font-weight: 600;
 }
 
-/* Показ 2-го рівня при hover на Priming */
+
 .has-submenu:hover > .dropdown-level-2 {
   display: block;
 }
@@ -422,4 +422,230 @@ body {
   background-color: #46a358;
   color: white;
   border-color: #46a358;
+}
+
+/* Основний блок футера */
+.footer {
+  background-color: #FBFBFB;
+  font-family: sans-serif;
+  color: #3D3D3D;
+  padding-top: 30px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* 1. Верхня частина з картками послуг та підпискою */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+  padding-bottom: 30px;
+}
+
+.footer-feature {
+  flex: 1;
+  border-right: 1px solid rgba(70, 163, 88, 0.1);
+  padding-right: 20px;
+}
+
+/* Іконки послуг через CSS Background */
+.feature-icon {
+  width: 75px;
+  height: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 15px;
+}
+
+.feature-icon-1 {
+  background-image: url('../images/garden-care.svg');
+}
+
+.feature-icon-2 {
+  background-image: url('../images/plant-renovation.svg');
+}
+
+.feature-icon-3 {
+  background-image: url('../images/watering-garden.svg');
+}
+
+.feature-title {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+
+.feature-text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #727272;
+}
+
+.newsletter {
+  flex: 1.5;
+}
+
+.newsletter-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-bottom: 17px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 12px 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter-btn {
+  background-color: #46A358;
+  color: #FFFFFF;
+  border: none;
+  padding: 12px 25px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+}
+
+.newsletter-text {
+  font-size: 13px;
+  line-height: 22px;
+  color: #727272;
+}
+
+
+.footer-contacts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 23px 25px;
+  background: linear-gradient(90deg, rgba(70, 163, 88, 0.15) 0%, rgba(70, 163, 88, 0.7) 100%);
+  border-radius: 6px;
+  margin-bottom: 33px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #3D3D3D;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 28px;
+}
+
+.contact-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Контактні іконки через фонове зображення */
+.contact-address {
+  background-image: url('../images/location-icon.svg');
+}
+
+.contact-email {
+  background-image: url('../images/email-icon.svg');
+}
+
+.contact-phone {
+  background-image: url('../images/phone-icon.svg');
+}
+
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+  padding-bottom: 30px;
+}
+
+.nav-column h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.nav-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-column li {
+  margin-bottom: 8px;
+}
+
+.nav-column a {
+  text-decoration: none;
+  color: #3D3D3D;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-column a:hover {
+  color: #46A358;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(70, 163, 88, 0.2);
+  border-radius: 4px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook {
+  background-image: url('../images/Facebook.svg');
+}
+
+.instagram {
+  background-image: url('../images/Instagram.svg');
+}
+
+.twitter {
+  background-image: url('../images/Twitter.svg');
+}
+
+.linkedin {
+  background-image: url('../images/linkedin.svg');
+}
+
+.youtube {
+  background-image: url('../images/Union.png');
+}
+
+.payment-methods img {
+  height: 20px;
+  margin-right: 10px;
+}
+
+.footer-copyright {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  color: #3D3D3D;
 }
