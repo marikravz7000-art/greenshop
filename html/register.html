@@ -1,18 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register</title>
-    
-    <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/normalize.css">
-    <link rel="stylesheet" href="../style/style.css">
 
-</head>
-<body>
-    <h1>Register</h1>
-    <a href="/login.html">Login</a>
-    
-</body>
+    <link rel="stylesheet" href="../css/style/reset.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body>
+    <div class="login-card">
+      <header>
+        <h1>
+          <a href="login.html" id="hrefINlogin">Login</a>
+          <span class="divider">|</span>
+          <span class="active-tab">Register</span>
+        </h1>
+      </header>
+
+      <main>
+        <p id="chapter">Enter your email and password to register.</p>
+
+        <form class="login-form">
+          <div class="input-group">
+            <input type="text" id="username" placeholder="Username" required />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="confirmpassword"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-btn"><b>Register</b></button>
+        </form>
+      </main>
+
+      <div class="social-divider">
+        <span>Or register with</span>
+      </div>
+
+      <div class="social-buttons">
+        <button type="button" class="social-btn">
+          <img src="../images/google 1.svg" alt="Google" class="images" />
+          Continue with Google
+        </button>
+
+        <button type="button" class="social-btn">
+          <img src="../images/facebook 1.svg" alt="Facebook" class="images" />
+          Continue with Facebook
+        </button>
+      </div>
+    </div>
+  </body>
 </html>
